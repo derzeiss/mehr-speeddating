@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Albra Grotesk, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --color-*: initial;
+  --color-pray: #ff4c3d;
+  --color-sacred: #6d6af0;
+
+  --color-pure: #faf9f7;
+  --color-day: #fcfbe1;
+  --color-heaven: #d9dbf0;
+
+  --color-night: #1c2836;
+  --color-incense-900: #0f1317;
+  --color-incense-500: #717578;
+  --color-incense-100: #dee2e5;
+
+  --spacing-content: clamp(16px, 5vw, 64px);
+}
+
+@utility uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+:root {
+  @apply text-incense-900;
+}
+
+@utility h1 {
+  @apply text-3xl leading-tight font-bold uppercase;
+}
+@utility app-title {
+  @apply text-5xl leading-tight font-bold uppercase;
+}
+
+.nav-btn.active {
+  @apply bg-heaven;
+}
+
+/*
+100 - thin
+200 - extra light
+300 - light
+400 - regular
+500 - medium
+600 - semi bold
+700 - bold
+800 - extra bold
+900 - black
+
+*/
