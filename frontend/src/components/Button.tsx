@@ -7,15 +7,13 @@ interface ButtonProps extends ComponentProps<"button"> {
 
 export const Button: FC<ButtonProps> = ({ className, children }) => {
   return (
-    <>
-      <button
-        className={cx(
-          "bg-pray text-pure px-6 py-3 font-bold uppercase",
-          className,
-        )}
-      >
-        {children}
-      </button>
-    </>
+    <button
+      className={cx(
+        "bg-pray text-pure px-6 py-3 font-bold uppercase",
+        className,
+      )}
+    >
+      {children}
+    </button>
   );
 };
